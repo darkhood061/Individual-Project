@@ -37,7 +37,7 @@ class Program
             // Caught when the input number is too large or too small
             Console.WriteLine("Error: The input number is too large or too small.");
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             // Catches any other unexpected exceptions
             Console.WriteLine($"An unexpected error occurred: {ex.Message}");
