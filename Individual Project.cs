@@ -12,7 +12,6 @@ class Program
 
         try
         {
-            
             int number1 = Convert.ToInt32(input1);
             int number2 = Convert.ToInt32(input2);
 
@@ -24,27 +23,22 @@ class Program
         }
         catch (FormatException)
         {
-            
             Console.WriteLine("Error: One or both of the inputs are not valid integers. Please enter valid numbers.");
         }
         catch (DivideByZeroException)
         {
-            
             Console.WriteLine("Error: Division by zero is not allowed.");
         }
         catch (OverflowException)
         {
-            
             Console.WriteLine("Error: The input number is too large or too small.");
         }
         catch (Exception)
         {
-            
             Console.WriteLine($"An unexpected error occurred: {ex.Message}");
         }
     }
 
-    
     static int Divide(int a, int b)
     {
         return a / b;
